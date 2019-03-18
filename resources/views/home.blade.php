@@ -27,17 +27,46 @@
 <div class="hero container">
     <img src="img/3.jpg" alt="Hero Image" class="hero-image img-fluid">
 </div>
+@if ($errors->any())
+    <div class="alert alert-danger">
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+@endif
+<div class="search container">
+    <form action="{{route('search')}}" method="POST" class="form-inline">
+        {{csrf_field()}}
+        <div class="form-group ">
+            <label class="col-form-label col-form-label-lg" for="BeginDate">Begin Date:</label>
+            <input type="date" id="BeginDate" name="beginDate" class="form-control">
+        </div>
+        <div class="form-group">
+            <label class="col-form-label col-form-label-lg" for="EndDate">End Date:</label>
+            <input type="date" id="EndDate" name="endDate" class="form-control">
+        </div>
+        <button class="btn btn-dark">Search</button>
+    </form>
+</div>
 
-<div class="cars container">
-    <div class="cars-list">
-        <div class="car">
-            <div class="left-side">
-                <img src="img/1.jpg" alt="" class=""style="width: 250px;height: 250px;">
+<div class="cars container ">
+    <div class="cars-list col-md-auto">
+        <h2>Our cars:</h2>
+        @foreach($cars as $car)
+            <div class="car row">
+                <div class="left-side">
+                    <img src="https://via.placeholder.com/200/09f.png/fff" alt="Car Image">
+                </div>
+                <div class="right-side">
+                    <h3>Car: {{$car->brand}}</h3>
+                    <h3>Licence plate: {{$car->licence_plate}}</h3>
+                    <h3>Car type: {{$car->type}}</h3>
+                    <h3>Day price: {{$car->day_price}}</h3>
+                </div>
             </div>
-            <div class="right-side">
-                    
-            </div>
-            </div>
+        @endforeach
     </div>
 </div>
 

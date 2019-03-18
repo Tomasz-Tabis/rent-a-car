@@ -10,6 +10,6 @@ class Worker extends Model
     use SoftDeletes;
 
     public function invoice(){
-        $this->belongsToMany(Invoice::class);
+        return $this->belongsToMany(Invoice::class);
     }
 }

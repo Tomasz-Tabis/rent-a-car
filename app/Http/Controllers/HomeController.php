@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Car;
 use Illuminate\Http\Request;
 
+
 class HomeController extends Controller
 {
     /**
@@ -26,6 +27,28 @@ class HomeController extends Controller
         return view('information');
     }
 
+    public function search(Request $request){
+
+        $request->validate([
+            'beginDate' => 'required|date',
+            'endDate' => 'required|date'
+        ]);
+
+        $cars = Car::all();
+        $avible = [];
+        foreach ($cars as $car){
+            if ($car->invoiceRule != NULL){
+                $c =  $car->invoiceRule
+                    ->whereBetween('begin_date', [date($request->beginDate), date($request->endDate)])
+                    ->whereBetween('end_date', [date($request->beginDate), date($request->endDate)]);
+                if (count($c) == 0){
+                    array_push($avible, $car);
+                }
+            }
+        }
+        
+        return view('home')->with('cars', $avible);
+    }
     /**
      * Show the form for creating a new resource.
      *
