@@ -21,7 +21,9 @@
         </ul>
     </nav>
 </header>
-
+<div class="hero">
+    <img src="" alt="">
+</div>
 <footer>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">

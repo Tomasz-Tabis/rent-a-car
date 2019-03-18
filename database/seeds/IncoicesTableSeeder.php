@@ -16,10 +16,10 @@ class IncoicesTableSeeder extends Seeder
 
         for ($i = 0; $i <=10; $i++){
             DB::table('invoices')->insert([
-                'invoice_rule_id' => rand(0,30),
+                'invoice_rule_id' => rand(1,30),
                 'invoice_date' => $date->format('Y-m-d H:i:s'),
-                'customer_id' => rand(0,30),
-                'worker_id' => rand(0,30),
+                'customer_id' => rand(1,30),
+                'worker_id' => rand(1,30),
             ]);
         }
     }
