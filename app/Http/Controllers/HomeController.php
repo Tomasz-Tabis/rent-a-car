@@ -23,10 +23,6 @@ class HomeController extends Controller
         return view('contact');
     }
 
-    public function information(){
-        return view('information');
-    }
-
     public function search(Request $request){
 
         $request->validate([
