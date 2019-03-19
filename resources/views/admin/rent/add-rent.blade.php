@@ -54,7 +54,7 @@
     <form action="{{route('store-reservation')}}" method="POST">
         {{csrf_field()}}
         <div class="form-group">
-            <label for=""></label>
+            <label for="">Test</label>
             <input type="text">
         </div>
         <div class="form-group">
