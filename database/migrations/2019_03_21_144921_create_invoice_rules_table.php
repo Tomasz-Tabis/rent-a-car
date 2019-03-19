@@ -15,6 +15,8 @@ class CreateInvoiceRulesTable extends Migration
     {
         Schema::create('invoice_rules', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->unsignedBigInteger('invoice_id');
+            $table->foreign('invoice_id')->references('id')->on('invoices');
             $table->unsignedBigInteger('car_id');
             $table->foreign('car_id')->references('id')->on('cars');
             $table->date('begin_date');

@@ -31,4 +31,5 @@ Route::delete('/admin/delete-customer/{customer}', 'CustomerController@destroy')
 
 //Rent car routes
 Route::get('/add-rent', 'ReservationController@create')->name('add-reservation');
-Route::post('/add-rent', 'ReservationController@store')->name('store-reservation');
+Route::post('/add-rent', 'ReservationController@store')->name('store-rent');
+Route::post('/add-rent/search', 'ReservationController@search')->name('reservation-search');
