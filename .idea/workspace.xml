@@ -1,36 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e6460885-b083-4226-b257-15cc8ea4327b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/admin-index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/car/add-car.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/car/detail-car.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/car/index-car.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/customer/add-customer.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/customer/detail-customer.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/customer/index-customer.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/rent/add-rent.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Car.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Car.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Customer.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Customer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CarController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CarController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ClientController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CustomerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CustomerController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Invoice.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Invoice.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/InvoiceRule.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/InvoiceRule.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Worker.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Worker.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_03_15_144707_create_cars_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_03_15_144707_create_cars_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_03_15_144811_create_workers_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_03_15_144811_create_workers_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_03_15_144921_create_invoice_rules_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_03_15_144921_create_invoice_rules_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_03_18_082602_create_customers_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_03_18_082602_create_customers_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_03_20_082620_create_invoices_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_03_20_082620_create_invoices_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/IncoiceRulesTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/IncoiceRulesTableSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/contact.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-    </list>
+    <list default="true" id="e6460885-b083-4226-b257-15cc8ea4327b" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +17,7 @@
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CarController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="442">
-              <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+              <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -55,7 +26,7 @@
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="333">
-              <caret line="65" column="8" lean-forward="true" selection-start-line="65" selection-start-column="8" selection-end-line="65" selection-end-column="8" />
+              <caret line="65" column="8" selection-start-line="65" selection-start-column="8" selection-end-line="65" selection-end-column="8" />
               <folding>
                 <element signature="e#40#52#0#PHP" expanded="true" />
               </folding>
@@ -221,7 +192,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -304,6 +274,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -347,6 +318,7 @@
       <workItem from="1552916075670" duration="4000" />
       <workItem from="1552923393914" duration="6711000" />
       <workItem from="1552938639537" duration="4628000" />
+      <workItem from="1552999497894" duration="63000" />
     </task>
     <task id="LOCAL-00001" summary="Change">
       <created>1552931551491</created>
@@ -369,11 +341,18 @@
       <option name="project" value="LOCAL" />
       <updated>1552981931404</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added all views for the user&#10;Added right seach function &#10;BIG UPDATE">
+      <created>1552999545887</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1552999545887</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32595000" />
+    <option name="totallyTimeSpent" value="32658000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -387,7 +366,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17110874" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17270789" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -401,8 +380,8 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49946696" weight="0.32936078" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.3400853" side_tool="true" visible="true" weight="0.32936078" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.65991473" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.34061834" side_tool="true" visible="true" weight="0.32936078" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.6593817" visible="true" weight="0.32936078" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -439,7 +418,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Change" />
     <MESSAGE value="Added contact page&#10;Removed information page (Included in to contact page)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added contact page&#10;Removed information page (Included in to contact page)" />
+    <MESSAGE value="Added all views for the user&#10;Added right seach function &#10;BIG UPDATE" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added all views for the user&#10;Added right seach function &#10;BIG UPDATE" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -487,13 +467,7 @@
         <state relative-caret-position="-959" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/information.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="63" column="13" selection-start-line="63" selection-start-column="13" selection-end-line="63" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/information.blade.php" />
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/common.rnc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2159">
@@ -501,34 +475,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/car/edit-car.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/rent/index-rent.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/worker/worker-index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/customer/edit-customer.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/rent/edit-rent.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/worker/add-worker.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/worker/edit-worker.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/worker/index-worker.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/car/edit-car.blade.php" />
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/rent/index-rent.php" />
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/worker/worker-index.blade.php" />
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/customer/edit-customer.blade.php" />
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/rent/edit-rent.blade.php" />
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/worker/add-worker.blade.php" />
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/worker/edit-worker.blade.php" />
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/worker/index-worker.blade.php" />
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ReservationController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -725,11 +679,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ClientController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-449" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ClientController.php" />
     <entry file="file://$PROJECT_DIR$/resources/views/admin/customer/index-customer.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="348">
@@ -750,7 +700,7 @@
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CarController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
-          <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -764,7 +714,7 @@
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="333">
-          <caret line="65" column="8" lean-forward="true" selection-start-line="65" selection-start-column="8" selection-end-line="65" selection-end-column="8" />
+          <caret line="65" column="8" selection-start-line="65" selection-start-column="8" selection-end-line="65" selection-end-column="8" />
           <folding>
             <element signature="e#40#52#0#PHP" expanded="true" />
           </folding>
