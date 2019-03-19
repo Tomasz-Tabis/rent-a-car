@@ -50,7 +50,27 @@
         </ul>
     </div>
 @endif
-
+<div class="rent-a-car container">
+    <form action="{{route('store-reservation')}}" method="POST">
+        {{csrf_field()}}
+        <div class="form-group">
+            <label for=""></label>
+            <input type="text">
+        </div>
+        <div class="form-group">
+            <label for=""></label>
+            <input type="text">
+        </div>
+        <div class="form-group">
+            <label for=""></label>
+            <input type="text">
+        </div>
+        <div class="form-group">
+            <label for=""></label>
+            <input type="text">
+        </div>
+    </form>
+</div>
 <footer class="container">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
