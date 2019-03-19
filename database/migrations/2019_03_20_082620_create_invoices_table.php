@@ -23,6 +23,7 @@ class CreateInvoicesTable extends Migration
             $table->unsignedBigInteger('worker_id');
             $table->foreign('worker_id')->references('id')->on('workers');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

@@ -7,8 +7,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Customer extends Model
 {
-    Use SoftDeletes;
-
+    use SoftDeletes;
     public function invoices(){
         return $this->hasMany(Invoice::class);
     }

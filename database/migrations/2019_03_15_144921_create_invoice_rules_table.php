@@ -17,9 +17,10 @@ class CreateInvoiceRulesTable extends Migration
             $table->bigIncrements('id');
             $table->unsignedBigInteger('car_id');
             $table->foreign('car_id')->references('id')->on('cars');
-            $table->datetime('begin_date');
-            $table->datetime('end_date');
+            $table->date('begin_date');
+            $table->date('end_date');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

@@ -8,7 +8,6 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class Worker extends Model
 {
     use SoftDeletes;
-
     public function invoice(){
         return $this->belongsToMany(Invoice::class);
     }

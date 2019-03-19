@@ -21,6 +21,7 @@ class CreateWorkersTable extends Migration
             $table->string('username');
             $table->string('password')->nullable();
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

@@ -24,7 +24,7 @@ class IncoiceRulesTableSeeder extends Seeder
         for ($i = 0; $i <=30; $i++){
             DB::table('invoice_rules')->insert([
                 'car_id' => rand(1,10),
-                'begin_date' => $date->format('Y-m-d H:i:s'),
+                'begin_date' => $date->format('Y-m-d'),
                 'end_date' => $date->addWeeks(rand(1, 52))->format('Y-m-d H:i:s'),
             ]);
         }

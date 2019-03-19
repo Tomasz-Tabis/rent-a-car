@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 
 class InvoiceRule extends Model
 {
+    use SoftDeletes;
     public function car(){
         return $this->hasOne(Car::class);
     }

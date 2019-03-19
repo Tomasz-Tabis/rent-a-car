@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Car;
 use Illuminate\Http\Request;
+use Carbon\Carbon;
 
 
 class HomeController extends Controller
@@ -21,6 +22,26 @@ class HomeController extends Controller
 
     public function contact(){
         return view('contact');
+    }
+
+    public function admin(){
+
+        $cars = Car::all();
+        $date = Carbon::now();
+        $today = $date->format('Y-m-d');
+
+        $ready = [];
+
+
+        foreach ($cars as $car){
+            if ($car->invoiceRule != NULL){
+                $c =  $car->invoiceRule->where('begin_date', '=',$today);
+                if (count($c) != 0){
+                    array_push($ready, $car);
+                }
+            }
+        }
+        return view('admin/admin-index')->with('cars', $ready);
     }
 
     public function search(Request $request){

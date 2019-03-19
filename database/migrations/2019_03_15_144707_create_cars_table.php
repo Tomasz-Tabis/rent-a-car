@@ -20,6 +20,7 @@ class CreateCarsTable extends Migration
             $table->string('type');
             $table->string('day_price');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

@@ -94,11 +94,11 @@
 
     </div>
 </div>
-<footer>
+<footer class="container">
     <nav class="navbar navbar-expand-lg navbar-light bg-light container">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <li class="nav-item">
-                <a class="nav-link" href="{{route('information')}}">Algemeene Informatie</a>
+                <a class="nav-link" href="{{route('contact')}}">Rent-A-Car</a>
             </li>
         </ul>
         <ul class="navbar-nav mt-2 mt-lg-0 ml-auto">

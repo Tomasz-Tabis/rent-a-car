@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Customer;
+use App\User;
 use Illuminate\Http\Request;
 
 class CustomerController extends Controller
@@ -14,7 +15,8 @@ class CustomerController extends Controller
      */
     public function index()
     {
-        //
+        $users = Customer::all();
+        return view('admin/customer/index-customer')->with('users', $users);
     }
 
     /**
@@ -24,7 +26,7 @@ class CustomerController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin/customer/add-customer');
     }
 
     /**
@@ -35,7 +37,7 @@ class CustomerController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        return view('admin/customer/add-customer');
     }
 
     /**
@@ -46,7 +48,7 @@ class CustomerController extends Controller
      */
     public function show(Customer $customer)
     {
-        //
+        return view('admin/customer/detail-customer')->with('user', $customer);
     }
 
     /**
@@ -80,6 +82,7 @@ class CustomerController extends Controller
      */
     public function destroy(Customer $customer)
     {
-        //
+        Customer::destroy($customer->id);
+        return back();
     }
 }

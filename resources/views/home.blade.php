@@ -67,6 +67,8 @@
                 </div>
             </div>
         @endforeach
+        <h2>About Rent A Car</h2>
+        <p>Lorem Ipsum is slechts een proeftekst uit het drukkerij- en zetterijwezen. Lorem Ipsum is de standaard proeftekst in deze bedrijfstak sinds de 16e eeuw, toen een onbekende drukker een zethaak met letters nam en ze door elkaar husselde om een font-catalogus te maken. Het heeft niet alleen vijf eeuwen overleefd maar is ook, vrijwel onveranderd, overgenomen in elektronische letterzetting. Het is in de jaren '60 populair geworden met de introductie van Letraset vellen met Lorem Ipsum passages en meer recentelijk door desktop publishing software zoals Aldus PageMaker die versies van Lorem Ipsum bevatten.</p>
     </div>
 </div>
 
@@ -74,7 +76,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <li class="nav-item">
-                <a class="nav-link" href="{{route('information')}}">Algemeene Informatie</a>
+                <a class="nav-link" href="{{route('contact')}}">Rent-A-Car</a>
             </li>
         </ul>
         <ul class="navbar-nav mt-2 mt-lg-0 ml-auto">
