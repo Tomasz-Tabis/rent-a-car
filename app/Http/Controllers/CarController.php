@@ -36,6 +36,20 @@ class CarController extends Controller
      */
     public function store(Request $request)
     {
+        $request->validate([
+            'brand' => 'required|string',
+            'licence' => 'required|string',
+            'type' => 'required|string',
+            'price' => 'required|int'
+        ]);
+
+        $car = new Car();
+        $car->brand = $request->brand;
+        $car->licence_plate = $request->licence;
+        $car->type = $request->type;
+        $car->day_price = $request->price;
+        $car->save();
+
         return view('admin/car/add-car');
     }
 

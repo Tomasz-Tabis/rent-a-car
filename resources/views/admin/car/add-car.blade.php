@@ -51,6 +51,30 @@
     </div>
 @endif
 
+<div class="add-car container">
+    <h2 class="mt-4">Add car.</h2>
+    <form action="{{route('store-car')}}" method="POST" class="form-inline mt-3">
+        {{csrf_field()}}
+        <div class="form-group col-md-3 flex-column">
+            <label for="Brand">Car brand</label>
+            <input type="text" name="brand" id="Brand" class="form-control">
+        </div>
+        <div class="form-group col-md-3 flex-column">
+            <label for="licencePlate">Car licence plate</label>
+            <input type="text" name="licence" id="licencePlate" class="form-control">
+        </div>
+        <div class="form-group col-md-3 flex-column">
+            <label for="type">Car type</label>
+            <input type="text" name="type" id="type" class="form-control">
+        </div>
+        <div class="form-group col-md-3 flex-column">
+            <label for="price">Car day price</label>
+            <input type="number" name="price" id="price" class="form-control">
+        </div>
+        <button class="col-md-12 btn btn-success mt-5 mb-5">Add car</button>
+    </form>
+</div>
+
 <footer class="container">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
