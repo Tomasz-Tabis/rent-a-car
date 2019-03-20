@@ -21,6 +21,7 @@ Route::get('/admin/cars', 'CarController@index')->name('car-list');
 Route::get('/admin/car/{car}', 'CarController@show')->name('show-car');
 Route::get('/admin/add-car', 'CarController@create')->name('add-car');
 Route::post('/admin/add-car', 'CarController@store')->name('store-car');
+Route::delete('/admin/delete-car/{car}', 'CarController@destroy')->name('destroy-car');
 
 //Customer routes
 Route::get('/admin/customers', 'CustomerController@index')->name('customers-list');

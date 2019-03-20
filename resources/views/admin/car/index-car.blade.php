@@ -51,6 +51,37 @@
     </div>
 @endif
 
+<div class="cars-overview container">
+    <h2>Our cars</h2>
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">Car ID</th>
+            <th scope="col">Car brand</th>
+            <th scope="col">Day price</th>
+            <th scope="col">Car Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach($cars as $car)
+            <tr>
+                <th>{{$car->id}}</th>
+                <th>{{$car->brand}}</th>
+                <td>{{$car->day_price}}</td>
+                <td class="row">
+                    <a href="{{route('show-car', $car->id)}}" class="btn btn-success" >Detail</a>
+                    <form id="car-delete-form" action="{{ route('destroy-car', $car->id) }}" method="POST">
+                        @csrf
+                        @method('DELETE')
+                        <button class="btn btn-danger">Remove Car</button>
+                    </form>
+                </td>
+            </tr>
+        @endforeach
+        </tbody>
+    </table>
+</div>
+
 <footer class="container">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">

@@ -14,7 +14,8 @@ class CarController extends Controller
      */
     public function index()
     {
-        return view('admin/car/index-car');
+        $cars = Car::all();
+        return view('admin/car/index-car')->with('cars', $cars);
     }
 
     /**
@@ -46,7 +47,7 @@ class CarController extends Controller
      */
     public function show(Car $car)
     {
-        return view('admin/car/detail-car');
+        return view('admin/car/detail-car')->with('car', $car);
     }
 
     /**
@@ -80,6 +81,7 @@ class CarController extends Controller
      */
     public function destroy(Car $car)
     {
-        //
+        Car::destroy($car->id);
+        return back();
     }
 }

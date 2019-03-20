@@ -78,6 +78,7 @@
                             @method('DELETE')
                             <button class="btn btn-danger">Remove Customer</button>
                         </form>
+                    </td>
                 </tr>
             @endforeach
             </tbody>
