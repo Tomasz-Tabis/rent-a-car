@@ -37,6 +37,28 @@ class CustomerController extends Controller
      */
     public function store(Request $request)
     {
+        $request->validate([
+            'first_letters' => 'required|string',
+            'prefix' => 'string|nullable',
+            'last_name' => 'required|string',
+            'street' => 'required|string',
+            'postal_code' => 'required|string',
+            'residence' => 'required|string',
+            'username' => 'string|nullable',
+            'password' => 'string|nullable'
+        ]);
+
+        $customer = new Customer();
+        $customer->first_letters = $request->first_letters;
+        $customer->prefix = $request->prefix;
+        $customer->last_name = $request->last_name;
+        $customer->street = $request->street;
+        $customer->postal_code = $request->postal_code;
+        $customer->residence = $request->residence;
+        $customer->username = $request->username;
+        $customer->password = $request->password;
+        $customer->save();
+
         return view('admin/customer/add-customer');
     }
 

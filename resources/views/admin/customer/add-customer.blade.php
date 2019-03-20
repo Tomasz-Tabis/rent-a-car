@@ -51,6 +51,47 @@
     </div>
 @endif
 
+
+<div class="add-customer container">
+    <h2 class="mt-4">Add customer.</h2>
+    <form action="{{route('store-customer')}}" method="POST" class="form-inline mt-3">
+        {{csrf_field()}}
+        <div class="form-group col-md-4 flex-column">
+            <label for="first_letters">Customer first letters</label>
+            <input type="text" name="first_letters" id="first_letters" class="form-control">
+        </div>
+        <div class="form-group col-md-4 flex-column">
+            <label for="prefix">Customer name prefix</label>
+            <input type="text" name="prefix" id="prefix" class="form-control">
+        </div>
+        <div class="form-group col-md-4 flex-column">
+            <label for="last_name">Customer last name</label>
+            <input type="text" name="last_name" id="last_name" class="form-control">
+        </div>
+        <div class="form-group col-md-4 flex-column mt-4">
+            <label for="street">Customer street name and house number</label>
+            <input type="text" name="street" id="street" class="form-control">
+        </div>
+        <div class="form-group col-md-4 flex-column mt-4">
+            <label for="postal_code">Customer postal code</label>
+            <input type="text" name="postal_code" id="postal_code" class="form-control">
+        </div>
+        <div class="form-group col-md-4 flex-column mt-4">
+            <label for="residence">Customer city name</label>
+            <input type="text" name="residence" id="residence" class="form-control">
+        </div>
+        <div class="form-group col-md-4 flex-column mt-4">
+            <label for="username">Customer username</label>
+            <input type="text" name="username" id="username" class="form-control">
+        </div>
+        <div class="form-group col-md-4 flex-column mt-4">
+            <label for="password">Customer password</label>
+            <input type="text" name="password" id="password" class="form-control">
+        </div>
+        <button class="col-md-12 btn btn-success mt-5 mb-5">Add customer</button>
+    </form>
+</div>
+
 <footer class="container">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
